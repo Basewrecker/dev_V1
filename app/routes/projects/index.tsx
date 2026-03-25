@@ -15,7 +15,7 @@ const ProjectsPage = ({loaderData}: Route.ComponentProps) => {
   const {projects} = loaderData as {projects: Project[]};
 
   const [currentPage, setCurrentPage] = useState(1);
-  const projectsPerPage = 2;
+  const projectsPerPage = 10;
 
   const totalPage = Math.ceil(projects.length / projectsPerPage);
   const indexOfLast = currentPage * projectsPerPage;

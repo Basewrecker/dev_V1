@@ -1,5 +1,10 @@
 import {Link} from "react-router";
 
+type HeroProps = {
+    name?: string;
+    text?: string;
+}
+
 const Hero = ({ name = '[Lorem]', text = 'I do Nothing' }) => {
     return (
         <header className = 'text-center py-20 px-4 bg-gray-900 text-white transition-colors duration-300'>
